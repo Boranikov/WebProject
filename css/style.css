@@ -2361,6 +2361,28 @@ ol {
     display: none !important;
   }
 }
+/* Blog Detay Sayfası (rd.html) Hero Alanı Düzeltmesi */
+@media (max-width: 768px) {
+  .blog-hero {
+    /* Alanın yüksekliğini belirleyelim ki ortalayacak yer olsun */
+    min-height: 500px; 
+    
+    /* İçeriği hem dikey hem yatay ortalamak için */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Üstteki menünün altında kalmaması için üstten boşluk */
+    padding-top: 100px; 
+    padding-bottom: 50px;
+  }
+
+  /* Yazıları da kendi içinde ortalamak için */
+  .blog__hero__text {
+    text-align: center;
+    width: 100%;
+  }
+}
 
 /* --- DÜZELTME BAŞLANGICI (Tablet) --- */
 @media (max-width: 768px) {
@@ -2781,6 +2803,7 @@ ol {
     gap: 40px;
   }
 }
+
 /* --- MODAL CSS BAŞLANGIÇ --- */
 .custom-modal {
     display: none; 
