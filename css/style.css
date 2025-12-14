@@ -1310,12 +1310,24 @@ ol {
 }
 
 .services__item__icon {
-  position: relative;
+
   height: 70px;
   width: 70px;
-  line-height: 70px;
-  text-align: center;
+  position: relative;
+  margin: 0 0 20px 0; 
+  display: flex;            
+  align-items: center;      
+  justify-content: center;  
 }
+
+
+.services__item__icon img, 
+.services__item__icon i {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+
 .services__item__icon:after {
   position: absolute;
   left: 0;
@@ -1328,7 +1340,6 @@ ol {
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
 }
-
 
 /*---------------------
   Services Page
@@ -1946,19 +1957,13 @@ ol {
     max-width: 1170px;
   }
 }
+
 /* Medium Device = 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__nav__menu {
     margin-right: 25px;
   }
-.header {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background: transparent;
-  z-index: 9;
-}
+
   .header__nav__menu ul li {
     margin-right: 25px;
   }
@@ -1987,19 +1992,21 @@ ol {
     max-width: 930px !important;
   }
 }
+
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero__slider.owl-carousel .owl-dots {
     max-width: 690px !important;
   }
-  
+
   .header__logo {
     position: relative;
     display: inline-block;
     overflow: visible !important;
     padding-bottom: 10px;
     top: 40px;
-}
+  }
+
   .services__title {
     margin-bottom: 50px;
   }
@@ -2007,7 +2014,7 @@ ol {
   .counter__item {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
-        transform: rotate(0);
+    transform: rotate(0);
     margin-bottom: 30px;
     width: auto;
   }
@@ -2031,7 +2038,7 @@ ol {
   .counter__item__text {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
-        transform: rotate(0);
+    transform: rotate(0);
   }
 
   .counter {
@@ -2081,7 +2088,7 @@ ol {
   }
 
   .slicknav_nav .slicknav_row,
-.slicknav_nav a {
+  .slicknav_nav a {
     padding: 7px 0;
     margin: 0;
     color: #ffffff;
@@ -2116,16 +2123,14 @@ ol {
   }
 
   .header__nav__option {
-        display: none;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
+    display: none;
   }
+
   .slicknav_arrow {
     display: none !important;
+  }
 }
-}
-/* Wide Mobile = 480px */
+
 @media only screen and (max-width: 767px) {
   .services__title {
     margin-bottom: 50px;
@@ -2134,7 +2139,7 @@ ol {
   .counter__item {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
-        transform: rotate(0);
+    transform: rotate(0);
     margin-bottom: 30px;
     width: auto;
   }
@@ -2158,7 +2163,7 @@ ol {
   .counter__item__text {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
-        transform: rotate(0);
+    transform: rotate(0);
   }
 
   .counter {
@@ -2207,11 +2212,11 @@ ol {
   .slicknav_nav ul {
     padding: 10px 30px;
   }
-.slick__nav__menu ul li .dropdown {
-  color:#00bfe7;
-}
+  .slick__nav__menu ul li .dropdown {
+    color: #00bfe7;
+  }
   .slicknav_nav .slicknav_row,
-.slicknav_nav a {
+  .slicknav_nav a {
     padding: 7px 0;
     margin: 0;
     color: #ffffff;
@@ -2307,11 +2312,12 @@ ol {
   .blog__details__quote {
     padding: 30px 45px 35px 35px;
   }
+
   .slicknav_arrow {
     display: none !important;
+  }
 }
-}
-/* Small Device = 320px */
+
 @media only screen and (max-width: 479px) {
   .hero__text h2 {
     font-size: 30px;
@@ -2350,14 +2356,18 @@ ol {
   .blog__details__quote {
     padding: 30px 40px 35px 35px;
   }
+
   .slicknav_arrow {
     display: none !important;
+  }
 }
-/* Hero Slider - Mobile Responsive */
+
+/* --- DÜZELTME BAŞLANGICI (Tablet) --- */
 @media (max-width: 768px) {
   .hero__item {
-    height: 150px;
+    height: auto;
     padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .hero__text span {
@@ -2381,11 +2391,15 @@ ol {
     margin-right: 8px;
   }
 }
+/* --- DÜZELTME BİTİŞİ --- */
 
+/* --- DÜZELTME BAŞLANGICI (Mobil) --- */
 @media (max-width: 480px) {
+  /* 1. Hero Alanını Büyütme */
   .hero__item {
-    height: 150px;
-    padding-top: 50px;
+    height: auto;
+    padding-top: 120px;  /* Üst dolgu artırıldı */
+    padding-bottom: 100px; /* Alt dolgu artırıldı */
   }
 
   .hero__text h2 {
@@ -2403,7 +2417,37 @@ ol {
     padding: 8px 16px 6px;
     font-size: 12px;
   }
+  
+  /* 2. Logo ve Menüyü Küçültme */
+  .header__logo img {
+      max-width: 120px; /* Logo genişliği sınırlandı */
+  }
+
+  .slicknav_btn {
+    padding: 5px 10px; /* Menü butonu dolgusu küçültüldü */
+    font-size: 12px; /* Menü yazısı küçültüldü */
+    top: 20px; /* Menü butonu konumu ayarlandı */
+  }
 }
+/* --- DÜZELTME BİTİŞİ --- */
+
+/* --- İKON DÜZELTMESİ (Genel ve Mobil) --- */
+/* İkonları bir kutu içinde ortalamak için genel kural */
+
+/* Mobilde ikon kutusunu ve ikonu biraz daha küçültme */
+@media (max-width: 480px) {
+    .services__item__icon {
+        width: 60px;
+        height: 60px;
+    }
+    .services__item__icon img, 
+    .services__item__icon i {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
+/* --- İKON DÜZELTMESİ BİTİŞİ --- */
+
 
 /* Work Gallery - Mobile */
 @media (max-width: 768px) {
@@ -2506,7 +2550,237 @@ ol {
     background-position: center;
   }
 }
-} 
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .primary-btn {
+    padding: 10px 24px 8px;
+    font-size: 13px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2:after {
+    width: 200px;
+  }
+
+  .spad {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+
+  .primary-btn {
+    padding: 8px 16px 6px;
+    font-size: 12px;
+  }
+
+  .site-btn {
+    padding: 12px 25px 10px;
+    font-size: 13px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+
+  .section-title h2:after {
+    width: 150px;
+  }
+
+  .spad {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .input-group input {
+    padding: 10px 10px 10px 35px;
+    font-size: 14px;
+  }
+
+  .btn-login {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .custom-modal {
+    display: flex;
+  }
+
+  .modal-content {
+    padding: 40px 25px;
+    width: 95%;
+    max-width: 100%;
+  }
+
+  .modal-content h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+
+  .close-btn {
+    font-size: 24px;
+    top: 5px;
+    right: 10px;
+  }
+
+  .modal-action-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-modal {
+    display: flex;
+  }
+
+  .modal-services-content {
+    padding: 35px 20px;
+    width: 95%;
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .modal-services-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .ozel-input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .ozel-textarea {
+    min-height: 120px;
+    max-height: 200px;
+  }
+
+  .modal-action-btn {
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .close-btn {
+    font-size: 26px;
+    top: 10px;
+    right: 15px;
+  }
+
+  .mv-card {
+    padding: 25px 15px;
+  }
+
+  .mv-card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .mv-card p {
+    font-size: 16px;
+  }
+
+  .goal-card {
+    gap: 30px;
+  }
+
+  .chart-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .progress-ring {
+    width: 120px;
+    height: 120px;
+  }
+
+  .progress-ring__bg {
+    stroke-width: 8;
+  }
+
+  .progress-ring__circle {
+    stroke-width: 8;
+  }
+
+  .goal-number {
+    font-size: 28px;
+  }
+
+  .goal-label {
+    font-size: 12px;
+  }
+
+  .bottom-desc {
+    font-size: 14px;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mv-card {
+    padding: 30px 20px;
+  }
+
+  .mv-card h2 {
+    font-size: 26px;
+  }
+
+  .goal-card {
+    gap: 40px;
+  }
+}
 /* --- MODAL CSS BAŞLANGIÇ --- */
 .custom-modal {
     display: none; 
