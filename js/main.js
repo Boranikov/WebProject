@@ -456,4 +456,19 @@ $(document).ready(function(){
     });
 
 });
+$(document).ready(function() {
+    
+    // Menüdeki herhangi bir linke tıklandığında çalışır
+    $(".menu-items li a").on("click", function() {
+        
+        // Sadece mobil cihazlarda (genişlik 768px'den küçükse) çalışsın
+        if ($(window).width() < 768) {
+            
+            // Sidebar'dan 'active' sınıfını kaldır (Menüyü kapat)
+            $(".sidebar").removeClass("active");
+        }
+        
+    });
+
+});
 })(jQuery);
