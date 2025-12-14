@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstatistikler</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/admin.css">
+    
+</head>
+<body>
+    <div class="admin-wrapper">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h3>VİDEO PANEL</h3>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./admin.html"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+                <li><a href="./users.html"><i class="fas fa-users"></i> Kullanıcılar</a></li>
+                <li><a href="./videos.html"><i class="fas fa-video"></i> Videolar</a></li>
+                <li><a href="./statics.html" class="active"><i class="fas fa-chart-pie"></i> İstatistikler</a></li>
+                <li><a href="./blogs.html"><i class="fas fa-book-open"></i> Bloglar</a></li>
+            </ul>
+        </nav>
+            <main class="main-content">
+                <header>
+                <h2>
+                    <label for="">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    İstatistikler
+                </h2>
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="search" placeholder="Burada ara...">
+                </div>
+                <div class="user-wrapper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="40px" height="40px" alt="">
+                    <div>
+                        <h4>Boran Sert</h4>
+                        <small>Yönetici</small>
+                    </div>
+                </div>
+            </header>
+     <div class="panel-header" style="margin-bottom: 20px;">
+        <h2 style="color: white; margin: 0;">İstatistikler</h2>
+        </div>
+
+<div class="stats-grid">  
+    <div class="stat-card">
+        <div class="stat-header">
+            <h3>Aylık Video İzlenmeleri</h3>
+            <select class="stat-select">
+                <option>2024</option>
+                <option>2023</option>
+            </select>
+        </div>
+        <div class="chart-container">
+            <canvas id="viewsChart"></canvas>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-header">
+            <h3>Yeni Kullanıcı Kayıtları</h3>
+            <span style="color: #00d2d3; font-size: 14px;">▲ %15 Artış</span>
+        </div>
+        <div class="chart-container">
+            <canvas id="usersChart"></canvas>
+        </div>
+    </div>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

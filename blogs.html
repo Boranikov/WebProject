@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Paneli</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/admin.css">
+    
+</head>
+<body>
+    <div class="admin-wrapper">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h3>VİDEO PANEL</h3>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./admin.html"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+                <li><a href="./users.html"><i class="fas fa-users"></i> Kullanıcılar</a></li>
+                <li><a href="./videos.html"><i class="fas fa-video"></i> Videolar</a></li>
+                <li><a href="./statics.html"><i class="fas fa-chart-pie"></i> İstatistikler</a></li>
+                <li><a href="./blogs.html" class="active"><i class="fas fa-book-open"></i> Bloglar</a></li>
+            </ul>
+        </nav>
+            <main class="main-content">
+            <header>
+                <h2>
+                    <label for="">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    Bloglar
+                </h2>
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="search" placeholder="Burada ara...">
+                </div>
+                <div class="user-wrapper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="40px" height="40px" alt="">
+                    <div>
+                        <h4>Boran Sert</h4>
+                        <small>Yönetici</small>
+                    </div>
+                </div>
+            </header>
+<button class="blog-add-btn">+ Yeni Blog Ekle</button>
+
+<div class="custom-blog-grid" id="myBlogContainer">
+
+    <div class="blog-post">
+        <h4>Bir videonun sosyal medyada paylaşılmasını kullanıcılar için cazip kılan şey nedir ?</h4>
+        <p>Kullanıcılar genellikle duygusal bağ kurdukları, kendilerini yansıtan, bilgilendirici veya eğlenceli buldukları videoları paylaşmayı tercih ederler.</p>
+        <p class="blog-post-author">Yazar: Boran Sert</p>
+        <p class="blog-post-date">Tarih: Ocak 07, 2020</p>
+        <p class="blog-post-classification">Tür: Sohbet</p>
+        <button class="blog-delete-btn">Sil</button>
+    </div>
+     <div class="blog-post">
+        <h4>Bumper Reklamlar: 6 Saniyede Nasıl Hikâye Anlatılır ?</h4>
+        <p>Bumper reklamlarında 6 saniyede hikâye anlatmanın püf noktası, tek bir güçlü mesaj seçmek ve bunu hızlı, net ve dikkat çekici bir görselle sunmaktır.</p>
+        <p class="blog-post-author">Yazar: Zeynep Uytun</p>
+        <p class="blog-post-date">Tarih: Ocak 04, 2021</p>
+        <p class="blog-post-classification">Tür: Tavsiyler</p>
+        <button class="blog-delete-btn">Sil</button>
+    </div>
+     <div class="blog-post">
+        <h4>Dijital Çağ için İşe Alım Pazarlaması: Kesin Bir Rehber</h4>
+        <p>Dijital çağın hızına uyum sağlamak için doğru yeteneklere ulaşmanın en etkili yollarını keşfedin. Modern işe alım stratejileriyle markanızı öne çıkarın ve hedef kitlenize güçlü bir şekilde hitap edin.</p>
+        <p class="blog-post-author">Yazar: Deniz İbrahim Sert</p>
+        <p class="blog-post-date">Tarih: Ocak 07, 2022</p>
+        <p class="blog-post-classification">Tür: Rehber</p>
+        <button class="blog-delete-btn">Sil</button>
+    </div>
+     <div class="blog-post">
+        <h4>Yeni Ekip Üyelerimize Bonjour! Ola! ve Merhaba! Deyin</h4>
+        <p>Yeni ekip üyelerimiz aramıza katılmıştır.</p>
+        <p class="blog-post-author">Yazar: Ata Uytun</p>
+        <p class="blog-post-date">Tarih: Haziran 04, 2021</p>
+        <p class="blog-post-classification">Tür: Sohbet</p>
+        <button class="blog-delete-btn">Sil</button>
+    </div>
+    <div class="blog-post">
+        <h4>Tıklama Başı Maliyet (PPC) Pazarlaması: Temel Bilgiler Rehberi</h4>
+        <p>PPC pazarlamasının temel çalışma mantığını, doğru hedefleme tekniklerini ve bütçenizi en verimli şekilde kullanmanın yollarını keşfedin. Kampanyalarınızı hızla optimize ederek maksimum dönüşüm elde edin.</p>
+        <p class="blog-post-author">Yazar: Bülent Bahad</p>
+        <p class="blog-post-date">Tarih: Temmuz 19, 2025</p>
+        <p class="blog-post-classification">Tür: Rehber</p>
+        <button class="blog-delete-btn">Sil</button>
+    </div>
+    <div class="blog-post">
+        <h4>8K Render Hizmetimiz Başlamıştır</h4>
+        <p>Yüksek çözünürlüklü projeleriniz artık beklemiyor. Yeni render sunucularımızla 4K ve 8K videolarınızı ışık hızında teslim ediyoruz.</p>
+        <p class="blog-post-author">Yazar: Berk Adam</p>
+        <p class="blog-post-date">Tarih: Kasım 21, 2025</p>
+        <p class="blog-post-classification">Tür: Duyuru</p>
+        <button class="blog-delete-btn">Sil</button>
+    </div>
+    </div>
+<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+<div class="blog-modal" id="newBlogModal">
+    
+    <div class="blog-modal-content">
+        
+        <div class="blog-modal-header">
+            <h2>Yeni Blog Ekle</h2>
+            <span class="blog-close-btn">&times;</span>
+        </div>
+
+        <div class="blog-modal-body">
+            
+            <div class="form-group">
+                <label>Blog Başlığı</label>
+                <input type="text" id="blogTitle" placeholder="Örn: Yeni Teknolojiler...">
+            </div>
+
+            <div class="form-group">
+                <label>Blog Türü</label>
+                <select id="blogCategory">
+                    <option value="Teknoloji">Teknoloji</option>
+                    <option value="Hayat">Sohbet</option>
+                    <option value="Eğitim">Rehber</option>
+                    <option value="Diğer">Duyuru</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>İçerik</label>
+                <textarea id="blogContent" rows="5" placeholder="Blog yazınızı buraya girin..."></textarea>
+            </div>
+
+            <button class="btn-save-blog" id="btnAddPost">Ekle</button>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

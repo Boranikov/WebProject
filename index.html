@@ -1,0 +1,634 @@
+<!------------ Boran tarafından yapılanlar ------------
+1- lang tipi tr yapıldı
+2- header kısmı düzenledi
+3- bulunulan sayfanın belli olması için header kısmında görsel iyileştirme
+4- daha fazla sayfa
+5- dropdown şeklinde açılan üst bar listleri
+6- türkçeleştirme
+7- dropdown listesinde hangi sayfada belli olması için görsel iyileştirme
+8- kullanıcı kolaylığı için görsel iyileştirmeler
+9- çalışır footer kısmı
+10- işlevi olmayan butonlara işlev kazandırma
+11- blog haberleri kısmından blog sayfasına yönlendirme
+12- isterlere uygun tasarım ve tablolar
+----------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Videograph</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+    <a href="./index.html" class="logo-link">
+        <img src="img/logo.png" alt="Logo">
+    </a>
+
+    <ul class="dropdown">
+        <li>
+            <a href="#" class="open-login-modal">ADMİN GİRİŞ</a>
+        </li>
+    </ul>
+</div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+<nav class="header__nav__menu mobile-menu">
+    <ul>
+        <li class="active"><a href="./index.html">Anasayfa</a></li>
+        <li><a href="./about.html">Hakkımızda</a></li>
+        <li><a href="./services.html">Hizmetlerimiz</a>
+            <ul class="dropdown">
+                <li><a href="./vm.html">Video Kurgu & Montaj</a></li>
+                <li><a href="./rd.html">Renk Düzenleme (Color)</a></li>
+                <li><a href="./sm.html">Ses Tasarımı & Mix</a></li>
+                <li><a href="./vfx.html">VFX & Efekt</a></li>
+            </ul>
+        </li>
+        <li><a href="./portfolio.html">Portfolyo</a>
+       <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./mv.html">Misyon & Vizyon</a></li>
+        <li><a href="./contact.html">İletişim</a>
+            </ul>
+        </li>
+    </ul>
+</nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Profesyonel Video Prodüksiyon</span>
+                                <h2>Hayalinizdeki Sahneyi Kurguluyoruz</h2>
+                                <a href="./services.html" class="primary-btn">Hizmetlerimizi İnceleyin</a> <!-- ./about kısmını hizmetler sayfası ile değiş -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-2.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Youtube & Sosyal Medya</span>
+                                <h2>İçeriklerinizi DÜzenleyin</h2>
+                                <a href="./portfolio.html" class="primary-btn">Referanslarımız</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Renk & Ses Tasarımı</span>
+                                <h2>Videolarınıza Profesyonel Dokunuş</h2>
+                                <a href="./contact.html" class="primary-btn">İletişime Geçin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span></span>
+                            <h2>Hizmetlerimiz</h2>
+                        </div>
+                        <p>Markanızı anlatmak için profesyonel ekibimizden destek alın. 
+                               İşletmenize özel, yaratıcı ve etkileyici video çözümleri sunuyoruz.</p>
+                        <a href="./services.html" class="primary-btn">Bütün Hizmleterimiz</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-1.png" alt="">
+                                </div>
+                                <h4>Akıcı Videolar</h4>
+                                <p>Ham görüntülerinizi alıp, akıcı ve etkileyici bir hikaye kurgusuna dönüştürüyoruz. 
+                                İzleyicinin ilgisini canlı tutan modern teknikler kullanıyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-2.png" alt="">
+                                </div>
+                                <h4>Senaryo ve Düzenleme</h4>
+                                <p>İstediğiniz tarzda senaryolar oluşturuyor ve bunları talepleriniz doğrultusunda düzenliyoruz</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-3.png" alt="">
+                                </div>
+                                <h4>Renk Düzenleme</h4>
+                                <p>Görüntülerinize sinematik bir hava katmak için profesyonel renk eşitleme 
+                                (Color Grading) ve atmosfer çalışmaları yapıyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-4.png" alt="">
+                                </div>
+                                <h4>Ses Tasarımı & VFX</h4>
+                                <p>Temiz diyaloglar, etkileyici ses efektleri ve görsel efekt 
+                                (VFX) dokunuşlarıyla videolarınızı bir üst seviyeye taşıyoruz..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Work Section Begin -->
+    <section class="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-1.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-2.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-3.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item large__item set-bg" data-setbg="img/work/work-4.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-5.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-6.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section End -->
+
+    <!-- Counter Section Begin -->
+    <section class="counter">
+        <div class="container">
+            <div class="counter__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-1.png" alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p>Tamamlanmış Projelerimiz</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item second__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-2.png" alt="">
+                                <h2 class="counter_num">1068</h2>
+                                <p>Memmunun Müşteriler</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item third__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-3.png" alt="">
+                                <h2 class="counter_num">625</h2>
+                                <p>Gelecekteki müşterilerimiz</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item four__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-4.png" alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p>Benzersiz Fikirlerimiz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team__title">
+                        <span>Karşınızda</span>
+                        <h2>Ekibimiz</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+                        <div class="team__item__text">
+                            <h4>Zeynep Uytun</h4>
+                            <p>Videographer</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--second set-bg" data-setbg="img/team/team-2.jpg">
+                        <div class="team__item__text">
+                            <h4>Cenk Adım</h4>
+                            <p>Renk Düzenleme (Color)</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--third set-bg" data-setbg="img/team/team-3.jpg">
+                        <div class="team__item__text">
+                            <h4>Ferda Sert</h4>
+                            <p>Ses Tasarımı & Mix</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--four set-bg" data-setbg="img/team/team-4.jpg">
+                        <div class="team__item__text">
+                            <h4>VFX & Efekt</h4>
+                            <p>Bülent Sürekli</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 p-0">
+                    <div class="team__btn">
+                        <a href="./about.html" class="primary-btn">Ekibimizi Tanıyın</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Latest Blog Section Begin -->
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>Blog</span>
+                        <h2>Blog Haberleri</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Bir videonun sosyal medyada paylaşılmasını kullanıcılar için cazip kılan şey nedir ?</h4>
+                            <ul>
+                                <li>Ocak 07, 2020</li>
+                                <li>05 Yorum</li>
+                            </ul>
+                            <p>Kullanıcılar genellikle duygusal bağ kurdukları, kendilerini yansıtan, 
+                            bilgilendirici veya eğlenceli buldukları videoları paylaşmayı tercih ederler.</p>
+                            <a href="./Blog.html" >Dahası <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Bumper Reklamlar: 6 Saniyede Nasıl Hikâye Anlatılır ?</h4>
+                            <ul>
+                                <li>Ocak 04, 2021</li>
+                                <li>Tavsiye</li>
+                            </ul>
+                            <p>Bumper reklamlarında 6 saniyede hikâye anlatmanın püf noktası, tek bir güçlü mesaj seçmek ve bunu hızlı, 
+                            net ve dikkat çekici bir görselle sunmaktır.</p>
+                            <a href="./Blog.html" >Dahası <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>8K Render Hizmetimiz Başlamıştır</h4>
+                            <ul>
+                                <li>Kasım 21, 2023</li>
+                                <li>Duyuru</li>
+                            </ul>
+                            <p>Yüksek çözünürlüklü projeleriniz artık beklemiyor. 
+                            Yeni render sunucularımızla 4K ve 8K videolarınızı ışık hızında teslim ediyoruz.</p>
+                            <a href="./Blog.html" >Dahası <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Reels ve Shorts için Kurgu Sırları</h4>
+                            <ul>
+                                <li>Nisan 22, 2025</li>
+                                <li>Trendler</li>
+                            </ul>
+                            <p>Dikey formatta viral olmak şans değildir. Hızlı geçişler, dinamik altyazılar ve doğru müzik seçimiyle mümkündür. Bunun için sizlerin yanındayız.</p>
+                           <a href="./Blog.html" >Dahası <span class="arrow_right"></span></a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Bumper Reklamlar: 6 Saniyede Nasıl Hikâye Anlatılır ?</h4>
+                            <ul>
+                                <li>Aralık 20, 2025</li>
+                                <li>Rehber</li>
+                            </ul>
+                            <p>Bumper reklamlarında 6 saniyede hikâye anlatmanın püf noktası, tek bir güçlü mesaj seçmek ve bunu hızlı, 
+                            net ve dikkat çekici bir görselle sunmaktır.</p>
+                            <a href="./Blog.html" >Dahası <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Bir videonun sosyal medyada paylaşılmasını kullanıcılar için cazip kılan şey nedir ?</h4>
+                            <ul>
+                                <li>Temmuz 01, 2023</li>
+                                <li>13 Yorum</li>
+                            </ul>
+                            <p>WeKullanıcılar genellikle duygusal bağ kurdukları, kendilerini yansıtan, 
+                            bilgilendirici veya eğlenceli buldukları videoları paylaşmayı tercih ederler.</p>
+                            <a href="./Blog.html" >Dahası <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>8K Render Çiftliğimiz Hizmete Girdi/h4>
+                            <ul>
+                                <li>Mayıs 01, 2020</li>
+                                <li>Duyuru</li>
+                            </ul>
+                            <p>Yüksek çözünürlüklü projeleriniz artık beklemiyor. 
+                            Yeni render sunucularımızla 4K ve 8K videolarınızı ışık hızında teslim ediyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Blog Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>Taze Fikirler, Taze Anlar; Hikâyelerinizi Gerçeğe Döküyoruz.</h2>
+                        <p>2020' den beri sizlerleyiz</p>
+                        <a href="./services.html">Hemen başlayın</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>Hakkımızda</h5>
+                            <p>2020 yılında Boran Sert tarafından kurulan Videoprah, ödüllü ve tam kapsamlı hizmet veren, 
+                            uzmanlaşmış bir prodüksiyon şirketidir.</p>
+                            <a href="./about.html" class="read__more">Dahası <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Biz Kimiz</h5>
+                            <ul>
+                                <li><a href="./about.html">Ekibimiz</a></li>
+                                <li><a href="./about.html">Kariyerlerimiz</a></li>
+                                <li><a href="./contact.html">İletişim</a></li>
+                                <li><a href="./contact.html">Konumlarımız</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>İşlerimiz</h5>
+                            <ul>
+                                <li><a href="#">Özellik</a></li>
+                                <li><a href="#">Güncel</a></li>
+                                <li><a href="#">Web Arşiv</a></li>
+                                <li><a href="#">Web için Video</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>İletişim</h5>
+                            <p>Kabaoğlu, Baki Komsuoğlu bulvarı No:515, Umuttepe, 41001 İzmit/Kocaeli</p>
+                            <p>Tel: (0262) 303 10 00</p>
+                            <p>Fax: (262) 303 10 33</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        
+                        <p class="footer__copyright__text">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            Bütün Hakları Saklıdır 
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <div class="admin-custom-modal" id="loginModal">
+    <div class="admin-modal-content login-box">
+        <div class="admin-modal-header">
+            <h3>Yönetici Girişi</h3>
+            <span class="admin-close-btn close-login">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <form id="fakeLoginForm">
+                
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Kullanıcı Adı" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Şifre" required>
+                </div>
+
+                <button type="submit" id="loginBtn" class="btn-login">
+                    Giriş Yap
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
